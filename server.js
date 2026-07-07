@@ -14,7 +14,7 @@ app.get("/api/ewg", async (req, res) => {
   try {
     const browser = await puppeteer.launch({
       headless: "new",
-      executablePath: "/usr/bin/google-chrome",
+      executablePath: "/opt/render/project/.render/chrome/linux-127/chrome",
       args: [
         "--no-sandbox",
         "--disable-setuid-sandbox",
